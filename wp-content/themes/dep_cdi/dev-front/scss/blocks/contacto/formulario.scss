@@ -1,0 +1,38 @@
+section{
+  &#contacto{
+    padding-top: 75px;
+  }
+}
+
+.formulario{
+  background-color: $gray;
+  text-align: center;
+  padding: rem(10px) rem(30px);
+  @include mq('md'){
+    text-align: left;
+  padding: rem(30px) rem(100px);
+  }
+  h4{
+    text-transform: uppercase;
+    font-family: $aux-ultra;
+    @include font(28px);
+    padding: rem(20px) 0 0;
+    @include mq('md') {
+      padding: rem(40px) 0 0;
+      @include font(32px);
+    }
+  }
+  &--form{
+    background-color: $white;
+    text-align: center;
+    padding: rem(10px) rem(30px);
+    border-radius: 40px;
+    width: 100%;
+    @include mq('md'){
+      width: 39.9%;
+    }
+    h3{
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.wpcf7 {
+	form {
+		input {
+			&[type="text"],
+			&[type="email"],
+			&[type="tel"],
+			&[type="date"],
+			&[type="number"] {
+				display: block;
+				color: $black;
+				width: 100%;
+				height: auto;
+				background-color: $white;
+				border: rem(1px) solid $black;
+				border-radius: 30px;
+				padding: rem(10px);
+				@include placeholder {
+					color: $black;
+				}
+			}
+
+			&[type="submit"] {
+				color: $red;
+				font-family: monospace;
+				margin: rem(20px) 0;
+			  border-radius: 30px;
+				background-color: transparent;
+				padding: rem(15px);
+				width: 150px;
+				font-size: 24px;
+			}
+		}
+		select {
+			display: block;
+			color: $black;
+			border-radius: 0;
+			width: 100%;
+			height: auto;
+			border: rem(1px) solid $black;
+			border-radius: 30px;
+			background-color: $white;
+			padding: rem(10px);
+		}
+		textarea {
+			display: block;
+			height: 100px;
+			color: $black;
+			border-radius: 30px;
+			width: 100%;
+			border: rem(1px) solid $white;
+			background-color: $white;
+			padding: rem(10px);
+			@include placeholder {
+				color: $black;
+			}
+		}
+
+	}
+}
+
+// Form layout
+.form {
+	&-wrap {
+		@include mq('md') {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: left;
+		}
+	}
+
+	&-col {
+		padding: rem(20px);
+		@include mq('md') {
+			width: 33.3%;
+			padding: inherit;
+			padding-right: rem(15px);
+		}
+
+		&:last-child {
+			@include mq('md') {
+				padding-right: 0;
+			}
+		}
+
+		br {
+			display: none;
+		}
+		span {
+			&.wpcf7-form-control-wrap {
+				display: block;
+				margin-bottom: rem(20px);
+			}
+		}
+	}
+}
+
+.disclaimer {
+	padding: rem(25px) 0;
+	margin: rem(20px) auto;
+	background-color: $black;
+}

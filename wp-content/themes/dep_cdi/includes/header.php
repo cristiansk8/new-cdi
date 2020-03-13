@@ -16,8 +16,11 @@
 </div>
 <![endif]-->
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-static-top">
   <div class="container">
+    <a class="navbar--logo navbar--logo__desktop" href="<?php echo home_url('/'); ?>">
+      <img src="<?php echo bloginfo('template_url')?>/img/logo.svg" alt="villa botánica">
+    </a>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -25,7 +28,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar--logo navbar--logo__mobile" href="<?php echo home_url('/'); ?>">
+        <img src="<?php echo bloginfo('template_url')?>/img/logo.svg" alt="villa botánica">
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <?php
@@ -37,25 +42,15 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-        <?php get_template_part('includes/navbar-search'); ?>
-        <?php
-            wp_nav_menu( array(
-                'theme_location'    => 'navbar-right',
-                'depth'             => 2,
-                'menu_class'        => 'nav navbar-nav navbar-right',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-        ?>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
-  
+
 <!--
 Site Title
 ==========
-If you are displaying your site title in the "brand" link in the Bootstrap navbar, 
-then you probably don't require a site title. Alternatively you can use the example below. 
+If you are displaying your site title in the "brand" link in the Bootstrap navbar,
+then you probably don't require a site title. Alternatively you can use the example below.
 See also the accompanying CSS example in css/bst.css .
 
 <div class="container">

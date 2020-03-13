@@ -1,0 +1,25 @@
+section {
+	p{
+		font-size: 20px;
+	}
+	header {
+		h2 {
+			font-family: $futura-bt;
+			margin-top: 0;
+			text-align: center;
+			text-align: center;
+			color: $red;
+			@include font(28px);
+			padding: rem(20px) 0 0;
+			@include mq('md') {
+				padding: rem(40px) 0 0;
+				@include font(36px);
+			}
+		}
+
+		h3 {
+			padding: rem(12px) 0;
+			text-align: center;
+		}
+	}
+}

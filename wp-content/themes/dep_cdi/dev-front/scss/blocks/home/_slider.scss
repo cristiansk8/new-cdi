@@ -1,0 +1,83 @@
+section{
+
+	&#slider-home{
+		.bannerNoticias{
+			background-color: $red;
+			text-transform: uppercase;
+			color: $white;
+			p{
+				font-family: $aux-regular;
+				margin-top: 10px;
+			}
+			a{
+				font-family: $aux-bold;
+				font-weight: bold;
+				color: $white;
+			}
+		}
+		.slider-content{
+			background-color: $gray;
+			padding: rem(30px) rem(10px);
+			@include mq('md'){
+				display: flex;
+				padding: rem(30px) rem(110px);
+			}
+			.sliderHome{
+				width: 100%;
+				@include mq('md'){
+					width: 60%;
+				}
+				&--item{
+					img{
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+			.info-slider{
+				padding: 0 rem(30px);
+				width: 100%;
+				text-align: center;
+				@include mq ('md'){
+					text-align: right;
+					width: 40%;
+				}
+				h1{
+					text-transform: uppercase;
+					font-family: $futura-bt;
+					color: $red;
+					@include mq ('md'){
+						font-size: 84px;
+					}
+
+				}
+				hr{
+					border-top: 5px solid $gray-light;
+				}
+				p{
+					font-family: $futurastd;
+					text-decoration: underline;
+					img{
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+
+	}
+	// Controls
+	.slick-arrow {
+		width: rem(26px);
+		height: rem(40px);
+		z-index: 2;
+		&.slick-prev {
+			left: rem(25px);
+			@include iconBg('../images/icons/chevron-left.png', 26px);
+		}
+		&.slick-next {
+			right: rem(25px);
+			@include iconBg('../images/icons/chevron-right.png', 26px);
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+// ------------------------ //
+// -- Commons -- //
+// ------------------------ //
+@import 'commons/fonts';
+@import 'commons/variables';
+@import 'commons/mixins';
+@import 'commons/general';
+@import 'commons/header';
+@import 'commons/footer';
+@import 'commons/pagination';
+
+// -- Vendors -- //
+@import 'vendors/slick/slick';
+@import 'vendors/leaflet/core';
+@import 'vendors/leaflet/custom-theme';
+
+// ------------------------ //
+// -- Loops -- //
+// ------------------------ //
+
+// ------------------------ //
+// -- Blocks -- //
+// ------------------------ //
+@import 'blocks/general/header-titles';
+@import 'blocks/general/panel';
+@import 'blocks/general/forms';
+@import 'blocks/general/top-filter';
+@import 'blocks/general/articles';
+
+@import 'blocks/home/slider';
+@import 'blocks/home/servicios';
+@import 'blocks/home/nosotros';
+@import 'blocks/home/infraestructura';
+@import 'blocks/home/ubicacion';
+@import 'blocks/home/suscripcion';
+
+@import 'blocks/contacto/formulario';
+@import 'blocks/contacto/info';
+
+
+@import 'blocks/box/top-content';
+@import 'blocks/box/services';
+@import 'blocks/box/location';
+// ------------------------ //
+// -- Pages -- //
+// ------------------------ //
+
+@import 'pages/contact';
+
+
+//singles
