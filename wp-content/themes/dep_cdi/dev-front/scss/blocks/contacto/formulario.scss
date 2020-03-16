@@ -14,7 +14,7 @@ section{
   }
   h4{
     text-transform: uppercase;
-    font-family: $aux-ultra;
+    font-family: $arial;
     @include font(28px);
     padding: rem(20px) 0 0;
     @include mq('md') {

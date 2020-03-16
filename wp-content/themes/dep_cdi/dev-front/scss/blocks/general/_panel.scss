@@ -16,7 +16,6 @@ body {
 			border-bottom: rem(2px) solid $black !important;
 			h4 {
 				text-transform: uppercase;
-				font-family: $bd;
 				@include font(20px);
 				@include mq('md') {
 					@include font(36px);

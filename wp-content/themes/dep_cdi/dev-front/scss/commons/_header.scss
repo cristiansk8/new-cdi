@@ -1,18 +1,18 @@
 body {
     .navbar {
-        &--logo {
-            &__desktop {
-                display: none;
-                text-align: center;
-                @include mq('md') {
-                    display: block;
-                }
-                img {
-                    display: inline-block;
-                    max-width: rem(500px);
-                }
-            }
-        }
+
+			.container-fluid{
+				text-align: center;
+				a{
+									img {
+											display: inline-block;
+											width: 300px;
+									}
+
+
+				}
+			}
+
         &-nav {
             text-align: center;
             display: block;
@@ -26,10 +26,10 @@ body {
                     display: inline-block;
                 }
                 a {
-                    text-transform: uppercase;
-                    color: $gray;
+                    
+                    color: $black;
                     @include mq('md') {
-                        @include font(30px);
+                        @include font(20px);
                     }
                 }
             }

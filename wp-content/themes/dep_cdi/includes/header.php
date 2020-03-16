@@ -17,7 +17,7 @@
 <![endif]-->
 
 <nav class="navbar navbar-static-top">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar--logo navbar--logo__desktop" href="<?php echo home_url('/'); ?>">
       <img src="<?php echo bloginfo('template_url')?>/img/logo.svg" alt="villa botánica">
     </a>
@@ -28,9 +28,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar--logo navbar--logo__mobile" href="<?php echo home_url('/'); ?>">
-        <img src="<?php echo bloginfo('template_url')?>/img/logo.svg" alt="villa botánica">
-      </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <?php
