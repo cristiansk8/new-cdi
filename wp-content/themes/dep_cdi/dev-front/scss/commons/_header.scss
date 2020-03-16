@@ -26,7 +26,8 @@ body {
                     display: inline-block;
                 }
                 a {
-                    
+                    font-family: $arial;   
+                    font-weight: 600;
                     color: $black;
                     @include mq('md') {
                         @include font(20px);
