@@ -7,14 +7,14 @@
 */
 
  ?>
- <section id="banner-home">
+ <section id="banner-homee">
    <?php
     while (have_rows('banner_home')): the_row();
      $imagen_fondo = get_sub_field('imagen_fondo');
      $titulo = get_sub_field('titulo');
 
    ?>
-   <div class="" style="background-image:url(<?php echo $imagen_fondo; ?>)">
+   <div class="banner-home" style="background-image:url(<?php echo $imagen_fondo; ?>)">
      <div class="titulo">
        <h1><?php echo $titulo; ?></h1>
      </div>
