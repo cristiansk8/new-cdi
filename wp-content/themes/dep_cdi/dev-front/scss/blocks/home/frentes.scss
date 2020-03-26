@@ -1,0 +1,33 @@
+.frentes{
+  background-color: $gray-cdi;
+  justify-content: center;
+  display: block;
+  @include mq('md'){
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item{
+
+    background-color: $white;
+    display: block;
+    text-align: center;
+    padding: rem(8px) rem(15px);
+    @include mq('md') {
+    padding: rem(30px) rem(30px) 0 rem(30px);
+    width: 20%;
+    margin: rem(50px) rem(20px);
+    }
+    img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: rem(15px) auto;
+    &:hover {filter: opacity(.5);}
+  }
+  p{
+    padding: rem(20px);
+    font-weight: 700;
+  }
+  }
+}

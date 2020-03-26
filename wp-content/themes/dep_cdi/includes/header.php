@@ -15,11 +15,13 @@
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
 <![endif]-->
+<div class="banner-verde">
 
+</div>
 <nav class="navbar navbar-static-top">
   <div class="container-fluid">
     <a class="navbar--logo navbar--logo__desktop" href="<?php echo home_url('/'); ?>">
-			jajajaj
+
       <img src="<?php echo bloginfo('template_url')?>/img/logo.svg" alt="villa botánica">
     </a>
     <div class="navbar-header">

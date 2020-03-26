@@ -232,7 +232,7 @@ $browser-context: 16; // Default
     padding: rem(14px);
     min-width: rem(120px);
 }
-@mixin afterLine($width:rem(60px), $height: rem(4px), $color: $red) {
+@mixin afterLine($width:rem(60px), $height: rem(4px), $color: $green-cdi) {
   content: "";
   display: block;
   position: absolute;

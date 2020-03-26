@@ -1,0 +1,28 @@
+#servicios{
+  .titulo{
+    h2{
+      font-weight: bold;
+      padding: 60px 0;
+    }
+  }
+  .servicios{
+    padding: 0 60px;
+    padding-bottom: 60px;
+    @include mq(md){
+      -webkit-column-count : 2;
+      -moz-column-count : 2;
+       column-count : 2;
+       column-gap : 4em;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    ul{
+      li{
+        font-size: 25px;
+      }
+    }
+  }
+
+}

@@ -1,4 +1,9 @@
 body {
+    .banner-verde{
+      height: 15px;
+      background-color: $green-cdi;
+      margin-bottom: 40px;
+    }
     .navbar {
 
 			.container-fluid{
@@ -26,14 +31,21 @@ body {
                     display: inline-block;
                 }
                 a {
-                    font-family: $arial;   
+                    font-family: $arial;
                     font-weight: 600;
                     color: $black;
                     @include mq('md') {
                         @include font(20px);
                     }
                 }
+                &.active{
+                  a{
+                    color: $green-cdi;
+                    text-decoration: underline;
+
+                }
             }
         }
     }
+}
 }

@@ -25,13 +25,13 @@
 // ------------------------ //
 @import 'blocks/general/header-titles';
 @import 'blocks/general/panel';
-@import 'blocks/general/forms';
+//@import 'blocks/general/forms';
 @import 'blocks/general/top-filter';
 @import 'blocks/general/articles';
 
 
 @import 'blocks/contacto/formulario';
-@import 'blocks/contacto/info';
+@import 'blocks/contacto/banner-contacto';
 
 
 @import 'blocks/box/top-content';
@@ -39,6 +39,21 @@
 @import 'blocks/box/location';
 // ------------------------ //
 // -- Pages -- //
+@import 'blocks/home/banner-home';
+@import 'blocks/home/destacado';
+@import 'blocks/home/informacion';
+@import 'blocks/home/frentes';
+
+@import 'blocks/consultancy/banner-consultancy';
+@import 'blocks/consultancy/servicios';
+
+@import 'blocks/manantial/banner-manantial';
+@import 'blocks/manantial/informacion';
+
+@import 'blocks/abejas/banner-abejas';
+@import 'blocks/abejas/produccion';
+@import 'blocks/abejas/caracteristicas';
+
 // ------------------------ //
 
 @import 'pages/contact';

@@ -1,0 +1,14 @@
+.caracteristicas{
+  margin: 60px o;
+
+  .caracteristicas-item{
+    padding: 30px;
+    background-color: $gray-cdi;
+    .content{
+      display:flex;
+      img{
+        margin-right: 20px;
+      }
+    }
+  }
+}

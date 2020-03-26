@@ -1,24 +1,25 @@
 section {
 	p{
-		font-size: 20px;
+		font-size: 25px;
+	}
+	h1{
+		font-size: 100px;
+	}
+	h2{
+		font-size: 42px;
 	}
 	header {
-		h2 {
-			margin-top: 0;
-			text-align: center;
-			text-align: center;
-			color: $red;
-			@include font(28px);
-			padding: rem(20px) 0 0;
-			@include mq('md') {
-				padding: rem(40px) 0 0;
-				@include font(36px);
-			}
-		}
+
 
 		h3 {
 			padding: rem(12px) 0;
 			text-align: center;
 		}
+
+	}
+}
+header{
+	h4{
+		padding: 15px 0;
 	}
 }
