@@ -13,12 +13,15 @@
       while (have_rows('iconos')): the_row();
        $icono = get_sub_field('icono');
        $titulo = get_sub_field('titulo');
+       $url = get_sub_field('url_destino');
 
      ?>
      <div class="frentes-item">
        <div class="titulo">
-         <img src="<?php echo $icono; ?>" alt="">
-         <p><?php echo $titulo; ?></p>
+         <a href="<?php echo $url; ?>"> <img src="<?php echo $icono; ?>" alt=""></a>
+       </div>
+       <div class="texto">
+         <a href="<?php echo $url; ?>"><p><?php echo $titulo; ?></p></a>
        </div>
      </div>
    <?php endwhile; ?>

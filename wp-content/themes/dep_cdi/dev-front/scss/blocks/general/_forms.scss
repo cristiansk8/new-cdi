@@ -11,8 +11,6 @@
 				width: 100%;
 				height: auto;
 				background-color: $white;
-				border: rem(1px) solid $black;
-				border-radius: 30px;
 				padding: rem(10px);
 				@include placeholder {
 					color: $black;
@@ -20,11 +18,11 @@
 			}
 
 			&[type="submit"] {
-				color: $red;
+
 				font-family: monospace;
 				margin: rem(20px) 0;
-			  border-radius: 30px;
-				background-color: transparent;
+				background-color: $green-cdi;
+				color: $white;
 				padding: rem(15px);
 				width: 150px;
 				font-size: 24px;
@@ -45,9 +43,7 @@
 			display: block;
 			height: 100px;
 			color: $black;
-			border-radius: 30px;
 			width: 100%;
-			border: rem(1px) solid $white;
 			background-color: $white;
 			padding: rem(10px);
 			@include placeholder {

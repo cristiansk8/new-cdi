@@ -1,0 +1,59 @@
+#personal{
+  header{
+    padding: rem(8px) rem(45px);
+    @include mq('md') {
+    padding: rem(30px) rem(30px) 0 rem(30px);
+    margin: rem(50px) rem(20px);
+    }
+    h2{
+      font-weight: 700;
+      color: $green-cdi;
+    }
+  }
+}
+.personal{
+  justify-content: center;
+  display: block;
+  @include mq('md'){
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item{
+
+    display: block;
+    padding: rem(8px) rem(45px);
+    @include mq('md') {
+    padding: rem(30px) rem(30px) 0 rem(30px);
+    width: 30%;
+    margin: rem(50px) rem(20px);
+    }
+    img {
+      padding: 15%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: rem(15px) auto;
+    }
+    p{
+      a,i{
+        color: $green-cdi;
+      }
+    }
+    .titulo{
+      #pedorini,#villegas,#cardona,#garnica,#murillo{
+        display: none;
+      }
+    }
+    .info{
+      display: flex;
+      .icono{
+        img{
+          margin-right: 8px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

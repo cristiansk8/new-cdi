@@ -7,9 +7,9 @@
 */
 
  ?>
- <section id="banner-vision">
+ <section id="banner-manager">
    <?php
-    while (have_rows('banner_vision')): the_row();
+    while (have_rows('banner_manager')): the_row();
      $imagen_fondo = get_sub_field('imagen_fondo');
      $titulo = get_sub_field('titulo');
 

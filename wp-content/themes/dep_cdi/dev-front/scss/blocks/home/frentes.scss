@@ -25,9 +25,13 @@
     margin-bottom: rem(15px) auto;
     &:hover {filter: opacity(.5);}
   }
-  p{
-    padding: rem(20px);
-    font-weight: 700;
+  a{
+    p{
+      padding: rem(20px);
+      font-weight: 700;
+      color: $green-cdi;
+    }
   }
+
   }
 }

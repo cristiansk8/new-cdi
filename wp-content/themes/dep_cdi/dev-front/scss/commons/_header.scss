@@ -6,16 +6,25 @@ body {
     }
     .navbar {
 
+
 			.container-fluid{
 				text-align: center;
 				a{
 									img {
 											display: inline-block;
-											width: 300px;
+											width: 250px;
 									}
 
 
 				}
+        .navbar-header{
+          .navbar-toggle{
+            background-color: $green-cdi;
+            .icon-bar{
+              background: $white;
+            }
+          }
+        }
 			}
 
         &-nav {
@@ -31,7 +40,6 @@ body {
                     display: inline-block;
                 }
                 a {
-                    font-family: $arial;
                     font-weight: 600;
                     color: $black;
                     @include mq('md') {
@@ -45,6 +53,17 @@ body {
 
                 }
             }
+
+        }
+        .dropdown-menu{
+          .active{
+            a{
+              background-color: $white;
+              &:hover{
+                color: $black;
+              }
+            }
+          }
         }
     }
 }

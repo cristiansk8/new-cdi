@@ -6,10 +6,9 @@ section{
 
 .formulario{
   background-color: $gray;
-  text-align: center;
+  text-align: left;
   padding: rem(10px) rem(30px);
   @include mq('md'){
-    text-align: left;
   padding: rem(30px) rem(100px);
   }
   h4{
@@ -29,7 +28,8 @@ section{
     border-radius: 40px;
     width: 100%;
     @include mq('md'){
-      width: 39.9%;
+      width: 100%;
+      text-align: left;
     }
     h3{
       color: $black;
