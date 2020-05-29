@@ -3,8 +3,8 @@
 	Campos Frentes
 	- imagen_fondo
   - titulo
-
 */
+
 
  ?>
  <section id="frentes">
@@ -24,6 +24,7 @@
          <a href="<?php echo $url; ?>"><p><?php echo $titulo; ?></p></a>
        </div>
      </div>
+
    <?php endwhile; ?>
    </div>
 

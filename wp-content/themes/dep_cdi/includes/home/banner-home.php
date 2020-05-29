@@ -22,3 +22,6 @@
    </div>
  <?php endwhile; ?>
  </section>
+
+
+https://www.cumbrera.co/documentos-covid/Formato1.xlsx

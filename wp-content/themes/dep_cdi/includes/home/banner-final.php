@@ -12,8 +12,8 @@
    <div class="informacion">
      <?php echo $informacion; ?>
    </div>
-   <div class="banner-final">
-     <img src="<?php echo $banner_final; ?>" alt="" width="100%" height="auto">
-   </div>
 
  </section>
+ <div class="banner-final">
+   <img src="<?php echo $banner_final; ?>" alt="" width="100%" height="auto">
+ </div>
