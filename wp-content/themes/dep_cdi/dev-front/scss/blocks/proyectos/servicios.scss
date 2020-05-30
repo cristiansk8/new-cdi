@@ -1,0 +1,130 @@
+.categorias {
+
+	@include mq('md') {
+		padding: rem(30px) rem(100px);
+	}
+
+	// Wrapper tabs
+	&__wrapper {
+
+		// Navigation
+		&-pills {
+			display: flex;
+			> li {
+				float: none;
+				text-align: center;
+				margin: 0 rem(5px) 0 0;
+				a {
+          font-weight: 700;
+					background-color: $black;
+					border-radius: 0 0 0 0;
+					margin: 0 0;
+					padding: rem(12px);
+					@include font(37px);
+
+				}
+
+				&:nth-child(1) {
+					a {
+						color: $white;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $green-cdi;
+							color: $white;
+						}
+					}
+
+
+				}
+				&:nth-child(2) {
+          a {
+						color: $white;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $green-cdi;
+							color: $white;
+						}
+					}
+				}
+				&:nth-child(3) {
+          a {
+						color: $white;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $green-cdi;
+							color: $white;
+						}
+					}
+				}
+				&:nth-child(4) {
+          a {
+						color: $white;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $green-cdi;
+							color: $white;
+						}
+					}
+				}
+
+				&.active {
+					a {
+						background-color: $green-cdi;
+						color: $white;
+					}
+				}
+			}
+		}
+
+		// Wrapper tabs
+		&-tabs {
+
+			&__item {
+				background-color: $green-cdi;
+				color: $white;
+				padding: rem(32px) 0;
+
+
+				@include mq('md') {
+					padding: rem(52px) rem(32px);
+					display: flex;
+					flex-wrap: wrap;
+				}
+
+				> div {
+					margin-bottom: rem(22px);
+				}
+        .categoria-titulo{
+          width: 100%;
+          text-align: left;
+          text-decoration: underline;
+          font-weight: 700;
+          h1{
+            font-size: 75px;
+          }
+        }
+				.categoria-infografia {
+          width: 40%;
+					text-align: center;
+					img {
+						display: inline-block;
+						max-width: 90%;
+					}
+				}
+				.categoria-info {
+          width: 60%;
+					padding: rem(15px) rem(22px);
+					p, ul {
+						color: $white;
+					}
+
+
+				}
+			}
+		}
+	}
+}

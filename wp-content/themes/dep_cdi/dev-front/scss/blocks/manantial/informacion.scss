@@ -1,13 +1,10 @@
 #informacion-manantial{
+  display: none;
   padding: 0 20px;
   padding-bottom: 60px;
   @include mq(md){
     padding: 0 60px;
     padding-bottom: 60px;
-    -webkit-column-count : 2;
-    -moz-column-count : 2;
-     column-count : 2;
-     column-gap : 4em;
   }
   img{
     width: 100%;

@@ -6,11 +6,8 @@
 */
   $info_destacado = get_field('destacado');
  ?>
- <section id="destacado">
-   <div class="destacado">
-     <div class="icono">
-            <img src="<?php echo bloginfo('template_url')?>/img/icono-destacado.png" alt="">
-     </div>
+ <section id="destacado-manantial">
+   <div class="destacado-manantial">
      <div class="contenido">
             <p><?php echo $info_destacado; ?></p>
      </div>

@@ -1,4 +1,30 @@
+.fancybox-content {
+  border-radius: 22px;
+    .popup{
+      h2{
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        span{
+          color: $green-cdi;
+          font-style: italic;
+          text-decoration: underline;
+          font-weight: 100;
+        }
+      }
+    }
+
+}
+
 #personal{
+  .popup{
+    h2{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    }
+  }
+
   header{
     padding: rem(8px) rem(45px);
     @include mq('md') {
@@ -20,6 +46,23 @@
   }
 
   &-item{
+
+    .equipo--item{
+      .equipo--caption{
+        .nombre{
+          h3{
+            color: $black;
+            font-weight: 700;
+          }
+        }
+        .cargo{
+          h3{
+            color: $green-cdi;
+            font-style: italic;
+          }
+        }
+      }
+    }
 
     display: block;
     padding: rem(8px) rem(45px);
