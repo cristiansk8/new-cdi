@@ -2,7 +2,12 @@
 
  <section id="personal">
    <header>
-     <h2>Nuestro Personal Senior</h2>
+     <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+       <h2>Nuestro Personal Senior</h2>
+  <?php else:?>
+     <h2>Our Senior Staff</h2>
+  <?php endif; ?>
+     
    </header>
    <div class="personal">
 

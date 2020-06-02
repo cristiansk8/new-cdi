@@ -9,7 +9,10 @@
 
 		// Navigation
 		&-pills {
-			display: flex;
+			display: block;
+			@include mq ('md'){
+				display: flex;
+			}
 			> li {
 				float: none;
 				text-align: center;
@@ -100,15 +103,26 @@
 				}
         .categoria-titulo{
           width: 100%;
-          text-align: left;
+					text-align: center;
+					@include mq ('md'){
+						width: 60%;
+						text-align: left;
+					}
           text-decoration: underline;
           font-weight: 700;
           h1{
-            font-size: 75px;
+            display: none;
+						@include mq ('md'){
+							font-size: 75px;
+							display: block;
+						}
           }
         }
 				.categoria-infografia {
-          width: 40%;
+          width: 100%;
+					@include mq ('md'){
+						width: 40%;
+					}
 					text-align: center;
 					img {
 						display: inline-block;
@@ -116,7 +130,12 @@
 					}
 				}
 				.categoria-info {
-          width: 60%;
+          width: 100%;
+					text-align: center;
+					@include mq ('md'){
+						width: 60%;
+						text-align: left;
+					}
 					padding: rem(15px) rem(22px);
 					p, ul {
 						color: $white;

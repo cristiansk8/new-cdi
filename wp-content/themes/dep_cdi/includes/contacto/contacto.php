@@ -33,7 +33,13 @@ $informacion= get_field('informacion_contacto');
       <div class="col-md-7">
         <div class="formulario--form">
           <div class="formulario-form__wrapper ">
-            <?php echo do_shortcode('[contact-form-7 id="7" title="Contact form 1"]'); ?>
+            <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+                <?php echo do_shortcode('[contact-form-7 id="7" title="Contact form 1"]'); ?>
+         <?php else:?>
+              <?php echo do_shortcode('[contact-form-7 id="536" title="Contact form 1 en"]'); ?>
+         <?php endif; ?>
+
+
           </div>
         </div>
       </div>

@@ -8,7 +8,12 @@ $imagen = get_field('imagen_equipo');
     <div class="row">
       <div class="col-md-8">
         <header>
-          <h2>Nuestro Equipo de Manejo Forestal en Colombia</h2>
+          <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+            <h2>Nuestro Equipo de Manejo Forestal en Colombia</h2>
+       <?php else:?>
+          <h2>Our Forest Management Team in Colombia</h2>
+       <?php endif; ?>
+
         </header>
       </div>
       <div class="col-md-4">
